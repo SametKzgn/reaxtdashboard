@@ -1,0 +1,430 @@
+
+body{
+
+background: #f4f2fc !important;
+}
+.nav-bar{
+    background-color: white;
+    width: 100%;
+font-size: 2rem;
+} 
+
+.nav-btn {
+outline: none;
+background: none;  
+border: none;
+}
+
+.side-bar{
+    
+position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #8e66db;
+    width: 378px;
+     top: 0;
+     left: -999px ; /* basıldıgında sıde bar ı soldan içeriye sokan css komutu */
+     transition: 700ms; /* side bar in geliş süresi */
+}
+.side-bar.active{
+
+    left: 0px; /* side bar actıve oldguunda sıde bar ı eskı halıne yanı gorunur hale getırır */
+}
+
+.content{
+    position: relative;
+
+}
+
+.contentright{
+transition: all 0.5s ease-in-out; /* animasyon, geçiş yaptırıyor */
+    margin-left: 24rem; /*  side bar açıldıgında soldan bosluk vererek sıde barın yanına getırıyor içerikleri */
+ flex-direction: column;
+    display: flex;
+    justify-content: flex-end; 
+}
+.contentright.active{ /* aktive oldugunda içeriği ortalıyor */
+    margin: 0 5rem;
+
+}
+
+.flex-container img{
+width: 35%;
+}
+.flex-container {
+
+    padding: 12px 0px;
+align-items: center;
+justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.id{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+.profile-button{
+    margin: 15px;
+    border: 1px solid white;
+    padding: 3px 20px;
+    border-radius: 1rem;
+    background-color: #8e66db;
+    color: white;
+    
+
+}
+.menü-container{
+display: flex;
+flex-direction: column;
+
+    background-color: white;
+}
+.menü-container h4{
+padding: 37px;
+height: 123px;
+}
+.profile-class{
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+
+}
+
+.menü-item {
+    text-decoration: none;
+    color:  #9ea3b7;
+}
+.wallet-main{
+   
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #f0e8fd; 
+    border-radius: 15px;
+    height: 300px;
+    width: 50%;
+
+    
+    
+}
+.ur-wallet{
+    margin-left: 20px;
+color: grey;
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+}
+.ur-wallet h5{margin-right: 20px;
+}
+
+.text-size{
+    font-size: 15px;
+    
+}
+.balance{
+    
+    color: grey;
+  
+text-align: center;
+
+}
+.middle-balance{
+    margin: 4.2rem;
+
+}
+.balance-value{
+    
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+
+}
+.usd{
+    font-weight: 700;
+    margin-right: 10px;
+}
+.usd2{
+    font-weight: 700;
+    
+}.cards{
+    margin-top: 40px;
+    gap: 15px;
+    display: flex;
+
+}
+.app-header{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.icons-container{
+    display: flex;
+    flex-direction: row;
+  
+justify-content: space-between;
+}
+
+.icons-container h4{
+    font-weight: bold;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+.cashmain-container{
+    gap: 19px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: white; 
+    border-radius: 15px;
+    height: 300px;
+    width:50%;
+
+
+}
+.text-class{
+    text-align: center;
+}
+
+.text-name2{
+    margin: 30px;
+  text-align: center;
+  align-items: center;
+    font-weight:400;
+
+}
+.button-div{
+
+    align-items: center;
+}
+
+.buttons1{
+    font-weight: bold;
+    border: 0px;
+    align-items: center;
+    color: white;
+    width:65%;
+    height: 3rem;
+    background-color: #3c18ba;
+}
+.lastcard-maincontainer{
+    margin-top: 50px;
+     background-color: white; 
+    border-radius: 15px;
+    height: 170px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+   
+  
+}
+.make{
+    display: flex;
+   align-items: center;
+}
+.icons-class span {
+  
+display: flex;
+flex-direction: column;
+
+    margin: 0 4rem;
+    font-weight:800;
+      
+}
+.icons-class {
+
+    display: flex;
+}
+.cake-card{
+    padding: 2.5rem;
+     margin-top: 50px;
+        height: 390px;
+        width: 100%;
+        
+        box-shadow:4px 4px 10px gray inset ;         
+}
+
+
+.cake1{
+   
+    color: #2d2d2d;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px ;
+}
+
+.cake1 img{
+   
+    width: 15%;
+    border-radius:  15px 0 0 15px ;
+}
+.cake-color{
+    color: #8d8d8d;
+}
+.cake-button{
+    font-weight: bold;
+    width: 7rem;
+    height: 1.8rem;
+    border: 0px;
+    border-radius: 15px;
+background-color: #863584;
+color: white;
+}
+.cake-button2{
+    font-weight: bold;
+    width: 6rem;
+    height: 1.8rem;
+    border: 0px;
+    border-radius: 15px;
+background-color: #4757a5;
+color: white;
+}
+.checkbox1{
+width: 20px;
+height: 50px;    
+}
+.cake2{
+    
+    color: #2d2d2d;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  background-color: white;
+  border-radius: 15px ;
+}
+
+.cake2 img{
+    max-height: 140.95px;
+    width: 15%;
+    border-radius:  15px 0 0 15px ;
+}
+.cake-main{
+    margin-top: 30px ;
+}
+.check1{
+    margin-right: 20px;
+}
+
+
+.txt-icon{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content:space-between;
+    min-width: calc(100% / 5);
+   
+}
+.buttons{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  width: 80%;
+  position: absolute;
+
+}
+
+.txt-icon span{
+    font-size: 2.2rem;
+   
+   
+}
+.txt-icon p{
+font-size: 1.2rem;
+margin-bottom: 0% !important;
+}
+
+.icons-class{
+    overflow: hidden; /* slider için taşanları gizliyor  */
+    width: 100%;
+max-width: 80%;
+position: relative;
+
+}
+
+.icons-class button{
+background-color: white;
+color: #3814b4;
+border: 0;
+font-size: 2rem;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+ 
+}
+.icons-class button svg{
+
+    display: block;
+
+}
+.left {
+    left: 20px;
+}
+.right{
+    right:  20px; 
+
+
+}
+
+@media  (max-width: 1100px){
+ 
+    .cards{
+       display: flex;
+        flex-direction: column;
+    }
+        .icons-container {
+width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        }
+    .wallet-main{
+        height:  30%;
+     width: 100%;
+     
+    }
+    .cashmain-container{
+       
+        width: 100%;
+    }
+ 
+    .cashmain-container{
+        width:  100%;
+        align-items: center; 
+    }
+
+    .contentright{
+        padding: 0 20px;
+        margin: 0;
+        margin-left: 0 !important;
+    }
+    .contentright.active{
+        margin: 0;
+        
+    }
+    .lastcard-maincontainer{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+       width: 100%;
+ 
+    }
+        .txt-icon{
+            min-width: calc(100% / 3) !important; 
+        }
+    
+    
+}
